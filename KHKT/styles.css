@@ -1,0 +1,171 @@
+/* RESET CƠ BẢN */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  /* TIÊU ĐỀ & NHÃN */
+  h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    text-align: center;
+    margin: 20px auto 10px;
+    font-weight: bold;
+  }
+  
+  select {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  /* BẢNG VÀ CONTAINER */
+  .table-container {
+    overflow-x: auto;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .classTable {
+    display: none;
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  .classTable.active {
+    display: block;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Giúp cột đều nhau */
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    word-wrap: break-word;
+  }
+  
+  /* INPUT & TEXTAREA */
+  input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    resize: vertical;
+  }
+  
+  /* NÚT */
+  button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #undoBtn {
+    background-color: #6c757d;
+  }
+  
+  #undoBtn:hover {
+    background-color: #5a6268;
+  }
+  
+  #undoBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* QR CODE */
+  #reader {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #result, #status {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* PHẦN “SẮP XẾP” */
+  #Sap-xep {
+    display: none;
+  }
+  #Sap-xep.active {
+    display: block;
+  }
+  
+  /* RESPONSIVE CHO ĐIỆN THOẠI */
+  @media (max-width: 768px) {
+    th, td {
+      font-size: 13px;
+      padding: 5px;
+    }
+  
+    input[type="number"] {
+      width: 45px;
+      font-size: 12px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  
+    textarea {
+      font-size: 13px;
+    }
+  }
+  .classTable table {
+    display: block;
+    overflow-x: auto;
+    width: max-content;
+    max-width: 100%;
+  }
+  
+  .classTable thead,
+  .classTable tbody,
+  .classTable tfoot {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+    
